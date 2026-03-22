@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart Customer Interaction Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-bg-shape shape-left"></div>
+    <div class="page-bg-shape shape-right"></div>
+
+    <main class="page-wrap">
+        <header class="hero">
+            <p class="tag">Grocery Delivery To Your Door</p>
+            <h1>FreshMart Grocery Store</h1>
+            <p>
+                We Provide you with the variety of grocery items and also support the home delivery
+            </p>
+        </header>
+
+        <section class="features">
+            <article class="feature-card">
+                <h2>Fresh Items</h2>
+                <p>We have fresh items taken directly from the farmers.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Home Delivery Service</h2>
+                <p>We provide you with the home delivery service. <p>
+            </article>
+            <article class="feature-card">
+                <h2>@Lower Price</h2>
+                <p>Buy the grocery items at lower price than the market price.</p>
+            </article>
+        </section>
+    </main>
+
+    <button id="chatbotBtn" class="chatbot-btn" type="button" aria-controls="chatbot" aria-expanded="false" onclick="toggleChat()">
+        Chat with Assistant
+    </button>
+
+    <section class="chatbot-container" id="chatbot" aria-live="polite" aria-label="Customer support chatbot">
+        <div class="chat-header">
+            <div>
+                <h3>FreshMart Assistant</h3>
+                <p>Online now</p>
+            </div>
+            <button class="icon-btn" type="button" aria-label="Close chat" onclick="toggleChat()">&times;</button>
+        </div>
+
+        <div class="chatbox" id="chatbox">
+            <div class="bot-message">Hi there. I can help with delivery, orders, returns, products, and contact support.</div>
+        </div>
+
+        <div class="quick-actions" id="quickActions">
+            <button type="button" onclick="sendQuickMessage('delivery details')">Delivery</button>
+            <button type="button" onclick="sendQuickMessage('return policy')">Returns</button>
+            <button type="button" onclick="sendQuickMessage('contact support')">Contact</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
