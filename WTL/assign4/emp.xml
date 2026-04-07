@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<!DOCTYPE employees SYSTEM "rule.dtd">
+
+<employees>
+
+    <employee empId="E201">
+        <name>Aarav Mehta</name>
+        <department>IT</department>
+        <designation>System Analyst</designation>
+        <salary>6500</salary>
+    </employee>
+
+    <employee empId="E202">
+        <name>Priya Nair</name>
+        <department>Marketing</department>
+        <designation>Marketing Executive</designation>
+        <salary>5500</salary>
+    </employee>
+
+    <employee empId="E203">
+        <name>Rohan Deshmukh</name>
+        <department>Finance</department>
+        <designation>Financial Analyst</designation>
+        <salary>7200</salary>
+    </employee>
+
+    <employee empId="E204">
+        <name>Sneha Kulkarni</name>
+        <department>HR</department>
+        <designation>HR Executive</designation>
+        <salary>4800</salary>
+    </employee>
+
+    <employee empId="E205">
+        <name>Vikram Patel</name>
+        <department>Operations</department>
+        <designation>Operations Manager</designation>
+        <salary>8000</salary>
+    </employee>
+
+</employees>
